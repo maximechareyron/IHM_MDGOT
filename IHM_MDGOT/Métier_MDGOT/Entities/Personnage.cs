@@ -23,7 +23,7 @@ namespace Métier_MDGOT {
             Prenom = prenom;
             Maison = (House) Enum.Parse(typeof(House), maison, true);
             Description = description;
-            Etat = (Etat)Enum.Parse(typeof(Etat), etat, false);
+            //Etat = (Etat)Enum.Parse(typeof(Etat), etat, false);
         }
 
         public Personnage(string nom, string prenom, string maison) : this(nom, prenom, maison, null, "vivant") { }

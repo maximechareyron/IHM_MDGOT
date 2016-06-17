@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Etat.cs" />
     <Compile Include="Entities\House.cs" />
     <Compile Include="Entities\Personnage.cs" />
     <Compile Include="DAO\PersonnageDAO.cs" />
