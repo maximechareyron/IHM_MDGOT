@@ -25,7 +25,6 @@ namespace IHM_MDGOT {
     {
 
         private ListPersonnagesViewModel _viewModel;
-        //MediaPlayer sound;
 
         public MainWindow()
         {
@@ -33,10 +32,6 @@ namespace IHM_MDGOT {
 
             _viewModel = new ListPersonnagesViewModel();
             DataContext = _viewModel;
-            /*sound = new MediaPlayer();
-            sound.Open(new Uri(@"../../Music/GOT.mp3", UriKind.Relative));
-            sound.Play();
-            */
         }
     }
 }

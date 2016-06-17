@@ -17,6 +17,9 @@ namespace IHM_MDGOT.ViewModels {
         public DelegateCommand EditCommand { get; set; }
         public DelegateCommand DeleteCommand { get; set; }
         public DelegateCommand SearchCommand { get; set; }
+        public DelegateCommand KillCommand { get; set; }
+        public DelegateCommand ComeBackCommand { get; set; }
+
         public String Recherche { get; set; }
 
         private PersonnageModel _personnage;
@@ -36,6 +39,8 @@ namespace IHM_MDGOT.ViewModels {
                 EditCommand.RaiseCanExecuteChanged();
                 DeleteCommand.RaiseCanExecuteChanged();
                 SearchCommand.RaiseCanExecuteChanged();
+                KillCommand.RaiseCanExecuteChanged();
+                ComeBackCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -67,9 +72,12 @@ namespace IHM_MDGOT.ViewModels {
             ListePersonnageAffich = ListePersonnages;
 
             AddCommand = new DelegateCommand(OnAddCommand, CanExecuteAdd);
-            EditCommand = new DelegateCommand(OnEditCommand, CanEditCommand);
-            DeleteCommand = new DelegateCommand(OnDeleteCommand, CanDeleteCommand);
+            EditCommand = new DelegateCommand(OnEditCommand, CanExecuteIfPersoSelected);
+            DeleteCommand = new DelegateCommand(OnDeleteCommand, CanExecuteIfPersoSelected);
             SearchCommand = new DelegateCommand(OnSearchCommand, CanExecuteSearch);
+            KillCommand = new DelegateCommand(OnKillCommand, CanExecuteIfPersoSelected);
+            ComeBackCommand = new DelegateCommand(OnComeBackCommand, CanExecuteIfPersoSelected);
+
         }
 
         public ObservableCollection<PersonnageModel> Rechercher() {
@@ -144,21 +152,30 @@ namespace IHM_MDGOT.ViewModels {
             //NotifyPropertyChanged("ListePersonnageAffich");
         }
 
+        private void OnKillCommand(object o){
+            PersonnageModel perso = Personnage;
+            perso.Etat = Etat.Mort;
+            ListePersonnages.Remove(Personnage);
+            ListePersonnages.Add(perso);
+            ListePersonnageAffich = ListePersonnages;
+        }
+
+        private void OnComeBackCommand(object o) {
+            Personnage.Etat = Etat.Vivant;
+            NotifyPropertyChanged("Personnage");
+        }
+
         private bool CanExecuteAdd(object o) {
             return true;
-        }
-
-        private bool CanDeleteCommand(object o) {
-            return Personnage != null;
-        }
-
-        private bool CanEditCommand(Object o) {
-            return Personnage != null;
         }
 
         private bool CanExecuteSearch(Object o) {
             //return (Recherche != null && Recherche != "");
             return true;
+        }
+
+        private bool CanExecuteIfPersoSelected(Object o) {
+            return Personnage != null;
         }
 
     }

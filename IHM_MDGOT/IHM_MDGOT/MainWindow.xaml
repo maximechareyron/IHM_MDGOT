@@ -89,8 +89,8 @@
             <Button Style="{DynamicResource BoutonMain}" Content="Ajouter un Personnage" Command="{Binding AddCommand}"/>
             <Button Style="{DynamicResource BoutonMain}" Content="Modifier le Personnage" Width="150" Command="{Binding EditCommand}"/>
             <Button Style="{DynamicResource BoutonMain}" Content="Supprimer le Personnage" Width="150" Command="{Binding DeleteCommand}"/>
-            <Button Style="{DynamicResource BoutonMain}" Content="Tuer" MinWidth="100" Command=""/>
-            <Button Style="{DynamicResource BoutonMain}" Content="Réanimer" MinWidth="100" Command=""/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Tuer" MinWidth="100" Command="{Binding KillCommand}"/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Réanimer" MinWidth="100" Command="{Binding ComeBackCommand}"/>
         </StackPanel>
     </Grid>
 </Window>
