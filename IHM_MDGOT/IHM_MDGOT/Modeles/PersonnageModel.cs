@@ -36,29 +36,21 @@ namespace IHM_MDGOT.Modeles {
                 return _maison;
             }
             set {
-                _maison = value; NotifyPropertyChanged("Maison");
+                _maison = value;
+                NotifyPropertyChanged("Maison");
             }
         }
 
-        public string ImageMaison {
+        private string _imageMaison;
+        public String ImageMaison {
             get {
-                return string.Format("/Métier_MDGOT;component/ImagesHouses/{0}", Enum.GetName(typeof(House), Maison).ToLower());
+                return string.Format("/Métier_MDGOT;component/ImagesHouses/{0}.{1}", Enum.GetName(typeof(House), Maison).ToLower(), "jpg");
             }
-            set { }
+            set {
+                _imageMaison = string.Format("/Métier_MDGOT;component/ImagesHouses/{0}.{1}", Enum.GetName(typeof(House), Maison).ToLower(), "jpg");
+                NotifyPropertyChanged("ImageMaison");
+            }
         }
-
-		
-        /*
-		private string _portrait;
-		public string Portrait {
-			get {
-				return _portrait;
-			}
-			set {
-				_portrait = value;
-			}
-		}
-         * */
 
 		public override string ToString() {
 			return string.Format("{0} {1}", Prenom, Nom);

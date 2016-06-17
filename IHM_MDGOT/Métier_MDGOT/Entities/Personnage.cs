@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Métier_MDGOT.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,16 +14,21 @@ namespace Métier_MDGOT {
 
         public House Maison { get; set; }
 
-        //    public string Description { get; set;  }
+        public string Description { get; set; }
 
-        public Personnage(string nom, string prenom, string maison) {
+        public Etat Etat { get; set; }
+
+        public Personnage(string nom, string prenom, string maison, string description, string etat) {
             Nom = nom;
             Prenom = prenom;
             Maison = (House) Enum.Parse(typeof(House), maison, true);
-            //    Description = description;
+            Description = description;
+            Etat = (Etat)Enum.Parse(typeof(Etat), etat, false);
         }
 
-        public Personnage(string nom, string prenom) : this(nom, prenom, "NoHouse") { }
+        public Personnage(string nom, string prenom, string maison) : this(nom, prenom, maison, null, "vivant") { }
+
+        public Personnage(string nom, string prenom) : this(nom, prenom, "NoHouse", null, "vivant") { }
 
     }
 }
