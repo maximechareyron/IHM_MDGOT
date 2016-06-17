@@ -63,7 +63,6 @@
       <DependentUpon>CreationCompte.xaml</DependentUpon>
     </Compile>
     <Compile Include="Events\ButtonPressedEvent.cs" />
-    <Compile Include="Factories\HouseFactory.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -132,8 +131,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Fonts\GOT.ttf" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -165,7 +162,6 @@
   <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\search.png" />
-    <Content Include="Music\GOT.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

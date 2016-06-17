@@ -6,17 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Métier_MDGOT {
-	public class House {
-
-		public string Nom { get; set; }
-
-		public string Blason { get; set; }
-
-		public House(string nom, string sourceImage) {
-			Nom = nom;
-            Blason = sourceImage;
-		}
-
-		public House(string nom) : this(nom, @"C:\Users\maxim\Source\Repos\MasterDetailGOT\IHM_MDGOT\Métier_MDGOT\ImagesHouses\noHouse.jpg") { }
-	}
+    public enum House {
+        noHouse = 0,
+        Arryn = 1,
+        Baratheon = 2,
+        Clegane = 3,
+        GreyJoy = 4,
+        Lannister = 5,
+        Mormont = 6,
+        Stark = 7,
+        Targaryen = 8,
+        Tully = 9,
+        Tyrell = 10
+    }
 }

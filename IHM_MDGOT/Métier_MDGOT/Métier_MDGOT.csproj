@@ -41,11 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\HouseDAO.cs" />
     <Compile Include="Entities\House.cs" />
     <Compile Include="Entities\Personnage.cs" />
-    <Compile Include="Entities\PersonnageMort.cs" />
-    <Compile Include="Entities\Episode.cs" />
     <Compile Include="DAO\PersonnageDAO.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,9 +59,6 @@
     <Resource Include="ImagesHouses\targaryen.jpg" />
     <Resource Include="ImagesHouses\tully.jpg" />
     <Resource Include="ImagesHouses\tyrell.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
