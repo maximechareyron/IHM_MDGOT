@@ -1,0 +1,93 @@
+﻿<Window x:Class="IHM_MDGOT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="Images/icone.ico"
+        Title="Master Detail GOT"
+        Background="WhiteSmoke"
+        MinHeight="500" Height="500"
+        Width="900" MinWidth="900">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*" />
+            <RowDefinition Height="41*" />
+            <RowDefinition Height="301*" />
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="41*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Style="{DynamicResource Titre}" Grid.Row="0">Game Of Thrones</TextBlock>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+
+            <Button Style="{DynamicResource BoutonConnexion}" Content="Connexion" />
+            <Button Style="{DynamicResource BoutonConnexion}" Content="Créer un compte" />
+
+        </StackPanel>
+
+        <Grid Margin="0 0 0 0"  Grid.Column="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBox  Grid.Column="0" HorizontalAlignment="Left" Margin="10 5 0 5" Height="30" Width="180" FontSize="16" Text="{Binding Recherche, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button  Style="{DynamicResource BoutonMain}" Width="25" Height="25" Grid.Column="0" HorizontalAlignment="Right" Margin=" 0 5 10 5" Command="{Binding SearchCommand}">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/search.png"/>
+                </Button.Background>
+            </Button>
+
+            <RadioButton Grid.Column="1"  Content="Tous" />
+            <RadioButton Grid.Column="2"  Content="Vivants" />
+            <RadioButton Grid.Column="3" Content="Morts" />
+            <RadioButton Grid.Column="4" Content="Bientôt morts" />
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="222*" />
+                <ColumnDefinition Width="33*"/>
+                <ColumnDefinition Width="638*" />
+            </Grid.ColumnDefinitions>
+
+            <ListBox Name="ListPerso" Margin="10,0,15.2,5.4" Grid.Column="0" ItemsSource="{Binding ListePersonnageAffich}" SelectedItem="{Binding Personnage}" Grid.ColumnSpan="2" />
+
+            <Grid Grid.Column="1" Grid.ColumnSpan="2" Margin="32.827,0,-0.4,0.4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <StackPanel Style="{DynamicResource StackPanel}" Grid.Row="0">
+                    <TextBlock FontSize="20" Text="Personnage : " Margin="0 0 5 0"/>
+                    <TextBlock FontSize="20" Text="{Binding Personnage, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+                <StackPanel Style="{DynamicResource StackPanel}" Grid.Row="1">
+                    <TextBlock FontSize="20" Text="Maison : " Margin="0 0 5 0"/>
+                    <TextBlock FontSize="20" Text="{Binding Personnage.House, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+                <Image Grid.Column="1" Grid.RowSpan="4" Height="300" HorizontalAlignment="Right" VerticalAlignment="Top" Source="{Binding Personnage.House.Blason}"/>
+            </Grid>
+        </Grid>
+
+        <StackPanel Style="{DynamicResource StackPanelBouton}" Grid.Row="4">
+            <Button Style="{DynamicResource BoutonMain}" Content="Ajouter un Personnage" Command="{Binding AddCommand}"/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Modifier le Personnage" Width="150" Command="{Binding EditCommand}"/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Supprimer le Personnage" Width="150" Command="{Binding DeleteCommand}"/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Tuer" MinWidth="100" Command=""/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Réanimer" MinWidth="100" Command=""/>
+        </StackPanel>
+    </Grid>
+</Window>

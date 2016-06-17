@@ -1,0 +1,60 @@
+﻿    <Window x:Class="IHM_MDGOT.EditView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="Images/icone.ico"
+        Title="Edition"
+        Background="WhiteSmoke" Height="500" Width="300"  MinHeight="200" MinWidth="300" MaxWidth="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock Style="{DynamicResource TitreFenetre}" Text="Modifier un personnage"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="5*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 30 0 0" Text="Nom :" />
+                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 30 0 0" Text="Prénom :" />
+                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 40 0 0" Text="Maison : " />
+                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 35 0 0" Text="Etat : " />
+                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 40 0 0" Text=" Description :" />
+                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 40 0 0" Text=" Portrait :" />
+
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Nom" Text="{Binding Personnage.Nom}"/>
+                <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Prenom" Text="{Binding Personnage.Prenom}"/>
+                <ComboBox Style="{DynamicResource AjoutComboBox}" Name="ComboBox_House" ItemsSource="{Binding ListeMaison}" SelectedItem="{Binding Personnage.House}" />
+                <ComboBox Style="{StaticResource AjoutComboBox}" Name="Box_Etat">
+                    <TextBlock Text="Vivants"/>
+                    <TextBlock Text="Bientôt mort"/>
+                    <TextBlock Text="Mort"/>
+                </ComboBox>
+                <TextBox
+                    Margin="20 30 20 0"
+                    Name="Description"
+                    TextWrapping="Wrap"
+                    AcceptsReturn="True"
+                    VerticalScrollBarVisibility="Visible"
+                    >
+                </TextBox>
+                <Button Content="Parcourir..."  Margin="20,20,0,0" Padding="5 5 5 5" Grid.Row="3" VerticalAlignment="Center" Width="130" HorizontalAlignment="Left" Command="{Binding OnAddCommand}"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="0 0 0 5">
+            <Button Style="{DynamicResource BoutonValid}" Content="Valider"/>
+            <Button Style="{DynamicResource BoutonValid}" Content=" Annuler"/>
+        </StackPanel>
+    </Grid>
+</Window>
