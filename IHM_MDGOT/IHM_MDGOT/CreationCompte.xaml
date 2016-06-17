@@ -22,6 +22,7 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <TextBlock Style="{DynamicResource TitreFenetre}" Text="Créer un compte"/>
+        <Label Grid.Row="0" Content="{Binding Error}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -32,29 +33,21 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Style="{DynamicResource UserText}">Nom d'utilisateur :</TextBlock>
-                <TextBlock Grid.Row="1" Style="{DynamicResource UserText}">Email :</TextBlock>
-                <TextBlock Grid.Row="2" Style="{DynamicResource UserText}">Mot de passe :</TextBlock>
-                <TextBlock Grid.Row="3" Style="{DynamicResource UserText}">Confirmation du mot de passe :</TextBlock>
+                <TextBlock Grid.Row="1" Style="{DynamicResource UserText}">Mot de passe :</TextBlock>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0" Style="{DynamicResource UserBox}"></TextBox>
-                <TextBox Grid.Row="1" Style="{DynamicResource UserBox}"></TextBox>
-                <PasswordBox Grid.Row="2" Style="{DynamicResource UserPassBox}" x:Name="passwordBox" />
-                <PasswordBox Grid.Row="3" Style="{DynamicResource UserPassBox}" x:Name="confirmpasswordBox" />
+                <TextBox Name="username" Text="{Binding User.Username}" Grid.Row="0" Style="{DynamicResource UserBox}"></TextBox>
+                <TextBox Name="password" Text="{Binding User.Password}" Grid.Row="1" Style="{DynamicResource UserBox}" />
             </Grid>
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Style="{DynamicResource BoutonValid}" Content="Valider" />
+            <Button Style="{DynamicResource BoutonAccount}" Content="Valider" />
             <Button Style="{DynamicResource BoutonCancel}" Content="Annuler" />
         </StackPanel>
     </Grid>

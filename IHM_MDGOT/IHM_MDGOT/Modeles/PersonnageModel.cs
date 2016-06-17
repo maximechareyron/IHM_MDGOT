@@ -1,6 +1,5 @@
 ﻿using Library;
 using Métier_MDGOT;
-using Métier_MDGOT.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

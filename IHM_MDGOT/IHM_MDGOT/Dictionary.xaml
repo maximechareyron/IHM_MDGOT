@@ -10,7 +10,7 @@
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="Cursor" Value="Hand" />
     </Style>
-    
+
     <Style x:Key="BoutonConnexion" TargetType="{x:Type Button}">
         <Setter Property="Margin" Value="5 0 10 0" />
         <Setter Property="Padding" Value="5 5 5 5" />
@@ -28,25 +28,25 @@
         <Setter Property="Margin" Value="0 10 0 0" />
         <Setter Property="FontSize" Value="40" />
     </Style>
-    
-    
+
+
     <Style x:Key="StackPanel" TargetType="StackPanel">
         <Setter Property="Orientation" Value="Horizontal" />
-        <Setter Property="Margin" Value="0 0 0 5" />
+        <Setter Property="Margin" Value="20 0 0 5" />
     </Style>
-    
-    
+
+
     <Style x:Key="StackPanelBouton" BasedOn="{StaticResource StackPanel}" TargetType="StackPanel">
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="41 0 41 5" />
     </Style>
 
-    
+
     <Style TargetType="RadioButton">
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Center" />
     </Style>
-    
+
     <Style x:Key="TextBlockHoriz" TargetType="TextBlock">
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
@@ -82,7 +82,27 @@
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Command" Value="{Binding ValidateCommand}" />
     </Style>
-    
+
+    <Style x:Key="BoutonLogin" TargetType="Button">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Margin" Value="0 0 30 0" />
+        <Setter Property="Padding" Value="5 5 5 5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Command" Value="{Binding OnLoginCommand}" />
+    </Style>
+
+    <Style x:Key="BoutonAccount" TargetType="Button">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Margin" Value="0 0 30 0" />
+        <Setter Property="Padding" Value="5 5 5 5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Command" Value="{Binding OnAccountCommand}" />
+    </Style>
+
     <Style x:Key="BoutonCancel" TargetType="Button">
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="Margin" Value="30 0 0 0" />
@@ -98,7 +118,7 @@
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="Margin" Value="0 0 10 0" />
     </Style>
-    
+
     <Style x:Key="UserBox" TargetType="TextBox">
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Left" />
@@ -106,7 +126,7 @@
         <Setter Property="Width" Value="130" />
         <Setter Property="Margin" Value="10 0 0 0" />
     </Style>
-    
+
     <Style x:Key="UserPassBox" TargetType="PasswordBox">
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Left" />
@@ -114,7 +134,7 @@
         <Setter Property="Width" Value="130" />
         <Setter Property="Margin" Value="10 0 0 0" />
     </Style>
-
+    
     <ObjectDataProvider x:Key="listeMaison"
        MethodName="GetValues" ObjectType="{x:Type System:Enum}">
         <ObjectDataProvider.MethodParameters>
