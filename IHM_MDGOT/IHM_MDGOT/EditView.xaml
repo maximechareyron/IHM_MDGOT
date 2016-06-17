@@ -37,11 +37,7 @@
                 <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Nom" Text="{Binding Personnage.Nom}"/>
                 <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Prenom" Text="{Binding Personnage.Prenom}"/>
                 <ComboBox Style="{DynamicResource AjoutComboBox}" Name="ComboBox_House" ItemsSource="{Binding Source={StaticResource listeMaison}}" SelectedItem="{Binding Personnage.Maison}" />
-                <ComboBox Style="{StaticResource AjoutComboBox}" Name="Box_Etat">
-                    <TextBlock Text="Vivants"/>
-                    <TextBlock Text="Bientôt mort"/>
-                    <TextBlock Text="Mort"/>
-                </ComboBox>
+                <ComboBox Style="{StaticResource AjoutComboBox}" Name="Box_Etat" ItemsSource="{Binding Source={StaticResource etats}}" SelectedItem="{Binding Personnage.Etat}"/>
                 <TextBox
                     Margin="20 30 20 0"
                     Name="Description"

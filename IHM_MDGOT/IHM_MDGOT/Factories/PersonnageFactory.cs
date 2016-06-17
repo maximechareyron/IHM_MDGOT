@@ -15,8 +15,8 @@ namespace IHM_MDGOT.Factories {
 			return new PersonnageModel {
 				Nom = perso.Nom,
 				Prenom = perso.Prenom,
-				Maison = perso.Maison
-				//Portrait=perso.Portrait
+				Maison = perso.Maison,
+				Etat = perso.Etat
 			};
 		}
 

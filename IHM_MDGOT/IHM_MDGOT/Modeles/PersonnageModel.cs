@@ -1,5 +1,6 @@
 ﻿using Library;
 using Métier_MDGOT;
+using Métier_MDGOT.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,28 @@ namespace IHM_MDGOT.Modeles {
             set {
                 _maison = value;
                 NotifyPropertyChanged("Maison");
+            }
+        }
+
+        private string _description;
+        public string Description {
+            get {
+                return _description;
+            }
+            set {
+                _description = value;
+                NotifyPropertyChanged("Description");
+            }
+        }
+
+        private Etat _etat;
+        public Etat Etat {
+            get {
+                return _etat;
+            }
+            set {
+                _etat = value;
+                NotifyPropertyChanged("Etat");
             }
         }
 
