@@ -11,14 +11,14 @@ namespace Métier_MDGOT {
 
         public string Prenom { get; set; }
 
-        public string Maison { get; set; }
+        public House Maison { get; set; }
 
         //    public string Description { get; set;  }
 
         public Personnage(string nom, string prenom, string maison) {
             Nom = nom;
             Prenom = prenom;
-            Maison = Enum.Parse(typeof(House), maison, true);
+            Maison = (House) Enum.Parse(typeof(House), maison, true);
             //    Description = description;
         }
 

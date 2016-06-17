@@ -36,7 +36,7 @@
             <StackPanel Grid.Column="1" Orientation="Vertical">
                 <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Nom" Text="{Binding Personnage.Nom, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Prenom" Text="{Binding Personnage.Prenom, UpdateSourceTrigger=PropertyChanged}"/>
-                <ComboBox Style="{DynamicResource AjoutComboBox}" Name="ComboBox_House" ItemsSource="{Binding ListeMaison}" SelectedItem="{Binding Personnage.House}" />
+                <ComboBox Style="{DynamicResource AjoutComboBox}" Name="ComboBox_House" ItemsSource="{Binding Source={StaticResource listeMaison}}" SelectedItem="{Binding Personnage.House}" />
                 <ComboBox Style="{DynamicResource AjoutComboBox}" Name="Box_Etat">
                     <TextBlock Text="Vivants"/>
                     <TextBlock Text="Bientôt mort"/>

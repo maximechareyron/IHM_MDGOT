@@ -2,7 +2,7 @@
 using IHM_MDGOT.Factories;
 using IHM_MDGOT.Modeles;
 using Library;
-using Métier_MDGOT.DAO;
+using Métier_MDGOT;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,9 +16,10 @@ namespace IHM_MDGOT.ViewModels {
         public DelegateCommand CancelCommand { get; set; }
 
         private PersonnageModel _personnage;
-        private ObservableCollection<HouseModel> _listeMaison;
 
         private bool _isSaisieValid=false;
+
+        public House ListeMaison;
 
         public PersonnageModel Personnage {
             get {
@@ -28,15 +29,6 @@ namespace IHM_MDGOT.ViewModels {
                 _personnage = value;
                 NotifyPropertyChanged("Personnage");
                 ValidateCommand.RaiseCanExecuteChanged();
-            }
-        }
-
-        public ObservableCollection<HouseModel> ListeMaison {
-            get {
-                return _listeMaison;
-            }
-            set {
-                _listeMaison = value;
             }
         }
 
@@ -52,7 +44,6 @@ namespace IHM_MDGOT.ViewModels {
         public PersonnageViewModel(PersonnageModel perso) {
             ValidateCommand = new DelegateCommand(OnValidateCommand, CanExecuteValidate);
             CancelCommand = new DelegateCommand(OnCancelCommand, CanExecuteCancel);
-            ListeMaison = HouseFactory.AllHouseEntitieToHouseModele(HouseDAO.GetAllHouse());
             Personnage = perso;
         }
 

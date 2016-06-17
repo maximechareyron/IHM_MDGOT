@@ -1,5 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib"
+                    xmlns:toto="clr-namespace:Métier_MDGOT;assembly=Métier_MDGOT"
                     xmlns:local="clr-namespace:IHM_MDGOT">
     <Style x:Key="BoutonMain" TargetType="{x:Type Button}">
         <Setter Property="Margin" Value="10 0 0 0" />
@@ -112,4 +114,12 @@
         <Setter Property="Width" Value="130" />
         <Setter Property="Margin" Value="10 0 0 0" />
     </Style>
+
+    <ObjectDataProvider x:Key="listeMaison"
+       MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+        <ObjectDataProvider.MethodParameters>
+            <x:Type TypeName="toto:House"/>
+        </ObjectDataProvider.MethodParameters>
+    </ObjectDataProvider>
+
 </ResourceDictionary>

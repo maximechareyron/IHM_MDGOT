@@ -15,8 +15,8 @@ namespace IHM_MDGOT.Factories {
 			return new PersonnageModel {
 				Nom = perso.Nom,
 				Prenom = perso.Prenom,
-				House = HouseFactory.HousesEntitiesToHousesModele(perso.Maison),
-				Portrait=perso.Portrait
+				Maison = perso.Maison
+				//Portrait=perso.Portrait
 			};
 		}
 

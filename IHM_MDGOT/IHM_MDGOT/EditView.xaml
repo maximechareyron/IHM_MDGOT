@@ -1,6 +1,7 @@
-﻿    <Window x:Class="IHM_MDGOT.EditView"
+﻿<Window x:Class="IHM_MDGOT.EditView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
         Icon="Images/icone.ico"
         Title="Edition"
         Background="WhiteSmoke" Height="500" Width="300"  MinHeight="200" MinWidth="300" MaxWidth="800">
@@ -35,7 +36,7 @@
             <StackPanel Grid.Column="1" Orientation="Vertical">
                 <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Nom" Text="{Binding Personnage.Nom}"/>
                 <TextBox Style="{DynamicResource Ajout}" Name="TextBox_Prenom" Text="{Binding Personnage.Prenom}"/>
-                <ComboBox Style="{DynamicResource AjoutComboBox}" Name="ComboBox_House" ItemsSource="{Binding ListeMaison}" SelectedItem="{Binding Personnage.House}" />
+                <ComboBox Style="{DynamicResource AjoutComboBox}" Name="ComboBox_House" ItemsSource="{Binding Source={StaticResource listeMaison}}" SelectedItem="{Binding Personnage.Maison}" />
                 <ComboBox Style="{StaticResource AjoutComboBox}" Name="Box_Etat">
                     <TextBlock Text="Vivants"/>
                     <TextBlock Text="Bientôt mort"/>

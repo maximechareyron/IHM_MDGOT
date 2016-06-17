@@ -1,5 +1,4 @@
-﻿using Métier_MDGOT.DAO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +8,7 @@ namespace Métier_MDGOT {
 	public class PersonnageDAO {
 		public static List<Personnage> GetAllPersonnage() {
 			List<Personnage> li = new List<Personnage>();
-			li.Add(new Personnage("Stark", "Arya", new House("Stark", @"C:\Users\maxim\Source\Repos\MasterDetailGOT\IHM_MDGOT\Métier_MDGOT\ImagesHouses\stark.jpg")));
+			li.Add(new Personnage("Stark", "Arya"));
             li.Add(new Personnage("Stark", "Ned"));
             li.Add(new Personnage("Stark", "Caitlyn"));
             li.Add(new Personnage("Stark", "Rob"));
