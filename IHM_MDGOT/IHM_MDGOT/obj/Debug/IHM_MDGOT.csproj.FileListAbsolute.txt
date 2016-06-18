@@ -25,3 +25,6 @@ C:\Users\Tanguy\Documents\IHM_MDGOT-master\IHM_MDGOT\IHM_MDGOT\obj\Debug\IHM_MDG
 C:\Users\Tanguy\Documents\IHM_MDGOT-master\IHM_MDGOT\IHM_MDGOT\obj\Debug\IHM_MDGOT.csproj.GenerateResource.Cache
 C:\Users\Tanguy\Documents\IHM_MDGOT-master\IHM_MDGOT\IHM_MDGOT\obj\Debug\IHM_MDGOT.exe
 C:\Users\Tanguy\Documents\IHM_MDGOT-master\IHM_MDGOT\IHM_MDGOT\obj\Debug\IHM_MDGOT.pdb
+C:\Users\Maxime\Documents\GitHub\IHM_MDGOT\IHM_MDGOT\IHM_MDGOT\bin\Debug\IHM_MDGOT.exe.config
+C:\Users\Maxime\Documents\GitHub\IHM_MDGOT\IHM_MDGOT\IHM_MDGOT\obj\Debug\IHM_MDGOT.exe
+C:\Users\Maxime\Documents\GitHub\IHM_MDGOT\IHM_MDGOT\IHM_MDGOT\obj\Debug\IHM_MDGOT.pdb
