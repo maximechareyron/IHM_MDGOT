@@ -67,7 +67,6 @@
     <Compile Include="Events\ButtonPressedEvent.cs" />
     <Compile Include="Events\PersonnageModelEventArgs.cs" />
     <Compile Include="Factories\UserFactory.cs" />
-    <Compile Include="Fichier.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
