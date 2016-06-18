@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IHM_MDGOT.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +19,12 @@ namespace IHM_MDGOT
     /// </summary>
     public partial class CreationCompte : Window
     {
+
+        public UserViewModel ViewModel { get; set; }
         public CreationCompte()
         {
+            ViewModel = new UserViewModel();
+            DataContext = ViewModel;
             InitializeComponent();
         }
     }

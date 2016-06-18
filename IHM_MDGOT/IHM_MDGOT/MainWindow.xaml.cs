@@ -24,7 +24,7 @@ namespace IHM_MDGOT {
     public partial class MainWindow : Window
     {
 
-        private ListPersonnagesViewModel _viewModel;
+       private ListPersonnagesViewModel _viewModel;
 
         public MainWindow()
         {

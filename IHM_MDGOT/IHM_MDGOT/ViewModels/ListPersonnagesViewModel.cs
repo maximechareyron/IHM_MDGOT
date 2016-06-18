@@ -21,13 +21,27 @@ namespace IHM_MDGOT.ViewModels {
         public DelegateCommand KillCommand { get; set; }
         public DelegateCommand ComeBackCommand { get; set; }
         public DelegateCommand SaveCommand { get; set; }
+        public DelegateCommand LogInCommand { get; set; }
+        
+        private bool _isLogged;
+        public bool IsLogged{
+            get{
+                return _isLogged;
+            }
+            set{
+                _isLogged=value;
+                SaveCommand.RaiseCanExecuteChanged();
+            }
+        }
 
-        public String Recherche { get; set; }
+
+        public string Recherche { get; set; }
 
         private PersonnageModel _personnage;
 
         private AddView _fenetreAjoutPerso;
         private EditView _fenetreEditionPerso;
+        private Login _fenetreLogIn;
 
 
         public PersonnageModel Personnage {
@@ -79,6 +93,7 @@ namespace IHM_MDGOT.ViewModels {
             KillCommand = new DelegateCommand(OnKillCommand, CanExecuteIfPersoSelected);
             ComeBackCommand = new DelegateCommand(OnComeBackCommand, CanExecuteIfPersoSelected);
             SaveCommand = new DelegateCommand(OnSaveCommand, CanSaveCommand);
+            LogInCommand = new DelegateCommand(OnLogInCommand, CanExecuteLogIn);
 
         }
 
@@ -121,6 +136,11 @@ namespace IHM_MDGOT.ViewModels {
             ButtonPressedEvent.GetEvent().Handler -= CloseEditView;
         }
 
+        private void CloseLogInView(object sender, EventArgs e) {
+            _fenetreLogIn.Close();
+            ButtonPressedEvent.GetEvent().Handler -= CloseLogInView;
+        }
+
         private ObservableCollection<PersonnageModel> TrierListe(ObservableCollection<PersonnageModel> li) {
             return new ObservableCollection<PersonnageModel>(li.OrderBy(x => x.Prenom));
         }
@@ -136,7 +156,17 @@ namespace IHM_MDGOT.ViewModels {
                 ListePersonnages.Add(_fenetreAjoutPerso.ViewModel.Personnage);
                 ListePersonnages = TrierListe(ListePersonnages); // Supprimable ? (la liste qui n'est pas affichée n'a techniquement pas besoin d'être triée)
                 ListePersonnageAffich = ListePersonnages;
-                //NotifyPropertyChanged("ListePersonnageAffich"); //Ajouté dans le setter de ListePersonnageAffich
+            }
+        }
+
+        private void OnLogInCommand(object o) {
+            ButtonPressedEvent.GetEvent().Handler += CloseLogInView;
+
+            _fenetreLogIn = new Login();
+            _fenetreLogIn.ShowDialog();
+
+            if (_fenetreLogIn.ViewModel.IsLogged) {
+                IsLogged = true;
             }
         }
 
@@ -199,7 +229,11 @@ namespace IHM_MDGOT.ViewModels {
         }
 
         private bool CanSaveCommand(object o) {
-            return true; //valide si la personne est loguée
+            return IsLogged;
+        }
+
+        private bool CanExecuteLogIn(object o){
+            return true;
         }
         
 

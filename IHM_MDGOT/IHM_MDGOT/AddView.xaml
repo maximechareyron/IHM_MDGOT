@@ -40,9 +40,9 @@
                     Margin="20 30 20 0"
                     Name="Description"
                     TextWrapping="Wrap"
-                    AcceptsReturn="True"
                     VerticalScrollBarVisibility="Visible"
                     Text="{Binding Personnage.Description}"
+                    MaxHeight="90"
                     />
             </StackPanel>
         </Grid>

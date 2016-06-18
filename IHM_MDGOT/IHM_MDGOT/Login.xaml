@@ -41,14 +41,14 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBox Name="username" Text="{Binding User.Username}" Grid.Row="0" Style="{DynamicResource UserBox}"></TextBox>
-                <TextBox Name="password" Text="{Binding User.Password}" Grid.Row="1" Style="{DynamicResource UserBox}" />
+                <TextBox Name="username" Text="{Binding User.Username}" Grid.Row="0" Style="{DynamicResource UserBox}"/>
+                <TextBox Name="password" Text="{Binding User.Password}" Grid.Row="1" Style="{DynamicResource UserBox}"/>
             </Grid>
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Style="{DynamicResource BoutonConnexion}" Content="Créer un compte" />
-            <Button Style="{DynamicResource BoutonLogin}" Content="Se connecter" />
-            <Button Style="{DynamicResource BoutonCancel}" Content="Annuler" />
+            <Button Style="{DynamicResource BoutonConnexion}" Content="Créer un compte" Command="{Binding AddUserCommand}"/>
+            <Button Style="{DynamicResource BoutonLogin}" Content="Se connecter" Command="{Binding LogInCommand}"/>
+            <Button Style="{DynamicResource BoutonCancel}" Content="Annuler" Command="{Binding CancelCommand}"/>
         </StackPanel>
     </Grid>
 </Window>
