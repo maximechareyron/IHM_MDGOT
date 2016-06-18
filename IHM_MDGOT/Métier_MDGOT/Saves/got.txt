@@ -1,4 +1,4 @@
-15
+26
 Stark
 Arya
 Stark
@@ -7,70 +7,127 @@ Vivant
 Stark
 Bran
 Stark
-
+Brandon Stark, aussi appelé Bran, est le fils d'Eddard et Catelyn Stark ainsi que le jeune frère de Robb, Sansa et Arya et le frère aîné de Rickon. Par son père il est également le demi-frère de Jon Snow. Étant plus jeune, c'était un garçon turbulent dont l'activité favorite était d'escalader les hautes tours de Winterfell.
+Vivant
+De Torth
+Brienne
+noHouse
+Brienne de Torth, fille d'un seigneur vassal des Baratheon, est une jeune femme au physique ingrat et à la stature impressionnante. Rêvant de devenir chevalier, elle apprend très jeune le maniement des armes et, grâce à sa victoire dans une mêlée, devient membre de la garde personnelle de Renly Baratheon, dont elle est secrètement amoureuse.
 Vivant
 Stark
-Caitlyn
+Catelyn
 Stark
-
+Catelyn Stark (née Tully) est l'épouse de Lord Eddard Stark et la mère de ses cinq enfants légitimes : Robb, Sansa, Arya, Bran et Rickon. Elle a grandi dans le sud, dans le Conflans. Elle était promise à Brandon, frère aîné d'Eddard, mais à sa mort, elle a épousé Ned afin de lier leur deux maisons.
 Mort
 Lannister
 Cersei
 Lannister
-
+Cersei Lannister est la fille de lord Tywin Lannister et la sœur jumelle de Jaime Lannister, et elle est devenue reine des Sept Couronnes en épousant Robert Baratheon. Femme très ambitieuse et réputée pour sa beauté, elle supporte mal les restrictions que lui impose son sexe et n'a que du mépris pour son mari. Cersei Lannister entretient depuis son adolescence une relation incestueuse avec son frère jumeau, Jaime.
 Mort
 Targaryen
 Daenerys
 Targaryen
-
+Daenerys est la fille du Roi Fou Aerys II Targaryen et de la reine Rhaella Targaryen ainsi que la jeune sœur de Rhaegar et Viserys Targaryen. Son père, atteint de folie, fut dépossédé de son trône par Robert Baratheon, dit l'Usurpateur. À la suite de ce coup d'État, la princesse Daenerys et son frère aîné, le prince Viserys, ont dû fuir et vivre en exil vers les Cités libres à Essos sur le continent Est de Westeros au-delà du détroit. Elle est la dernière représentante de la lignée des Targaryen.
 Vivant
 Stark
 Eddard
 Stark
 Lord Eddard Stark, dit familièrement Ned, est le seigneur de la maison Stark de Winterfell, suzerain et gouverneur du Nord. Il possède la physionomie des Stark, visage long, solennel et yeux gris sombre. Brun, il porte ses cheveux longs et arbore une barbe
 Mort
-Lannister
-Geoffrey
-Lannister
+Clegane
+Gregor
+Clegane
+Gregor Clegane est le frère ainé de Sandor Clegane, qui le déteste car ce dernier lui avait brulé la moitié du visage étant enfant. Il est réputé comme l'un des meilleurs combattants de Westeros, extrêmement impulsif et violent. Il est d'ailleurs surnommé "le chien fou de Tywin Lannister", qui est son souverain puisque que les Clegane sont une maison vassal des Lannister.
+Vivant
 
+HODOR
+Stark
+HOLD THE DOOR ! HOLD T DOOR ! HOD T DOR ! HODOR !
 Mort
 Lannister
 Jaime
 Lannister
-
+Jaime Lannister, surnommé le Régicide, est le fils de lord Tywin Lannister, et aussi le frère jumeau de l'actuelle reine, Cersei. C'est un homme d'une trentaine d'années, extrêmement séduisant, arrogant, sûr de lui et considéré comme l'une des meilleures lames du royaume. Il fait partie de la garde Royale.
 Vivant
+Lannister
+Joffrey
+Lannister
+Joffrey Baratheon est officiellement le fils de Cersei Lannister et de Robert Baratheon, roi de Westeros dans la saison 1, mais en réalité le fils biologique de Cersei et de son frère jumeau Jaime Lannister. Il devient roi à la mort de son "père", à la fin de la saison 1. C'est un garçon cruel qui aime torturer les gens, on peut le voir à plusieurs reprises.
+Mort
+Snow
+Jon
+Stark
+Jon Snow est le fils d'Eddard Stark et d'une mère inconnue. Selon Ned, sa mère serait Wylla. Jon Snow a grandi parmi ses demi-fréres et sœurs et a développé une rivalité amicale avec Robb. Il est proche d'Arya mais sa présence a toujours constitué une source de ressentiment pour sa belle-mère, Catelyn, qui le hait depuis qu'elle a posé a les yeux sur lui.
+Vivant
+Drogo
+Khal
+noHouse
+Drogo était l'un des Khal les plus puissants des Dothrakis. Il a mené le plus grand khalasar dans la mer Dothraki, qui contenait 40 000 guerriers. Ses sang-coureurs étaient Cohollo, Qotho et Haggo. Il était le fils de Bharbo. Il n'avait jamais été vaincu. Sa tresse était longue et pleine de cloches, symbolisant son pouvoir.
+Mort
 Tyrell
 Loras
 Tyrell
+Loras Tyrell, dit « le Chevalier des fleurs », est le plus jeune fils de Mace Tyrell. Sa beauté et sa virtuosité à la lance en font l'un des jeunes chevaliers les plus en vue des Sept Couronnes. Après la mort de Robert Baratheon, il rejoint la garde personnelle de son frère Renly, et des soupçons courent sur une relation homosexuelle entre eux deux.
+Vivant
+Tyrell
+Margaery
+Tyrell
+Margaery Tyrell est la fille de Mace Tyrell. Elle épouse Renly Baratheon, puis est promise à Joffrey Baratheon après la mort de Renly. Veuve une deuxième fois, elle épouse alors le jeune Tommen Baratheon.
+Vivant
 
+Mélisandre
+noHouse
+Mélisandre, surnommée la « femme rouge », est une ensorceleuse d'ombres venue d'Asshaï-lès-l'Ombre et une prêtresse rouge du culte de R’hllor, le Maître de la Lumière. C'est une grande et gracieuse femme, svelte, ronde de sein, à la taille fine et au visage en cœur. Sa peau est blanche, lisse, onctueuse et immaculée comme de la crème. Au toucher, elle est chaude, voire fiévreuse. Sa chevelure a un ton de cuivre et les iris de ses yeux sont rouges.
+Vivant
+Baelish
+Petyr
+noHouse
+Lord Petyr Baelish dit Littlefinger, est le seigneur de la maison Baelish et le Grand Argentier au Conseil restreint du roi Robert Baratheon. Ancien pupille de lord Hoster Tully à Vivesaigues, il doit alors son sobriquet à Edmure Tully qui le surnomma ainsi en raison de son apparence chétive et parce que son fief est situé sur le plus petit des Quatre Doigts
 Vivant
 Stark
-Rob
+Robb
 Stark
-
+Robb Stark est le fils aîné d'Eddard Stark et de Catelyn Tully et est l'héritier de la maison Stark à Winterfell et le Nord. Ses amis et ses ennemis l'appellent Le Jeune Loup. Il a deux sœurs, Sansa et Arya; deux frères, Bran et Rickon, et un demi-frère bâtard, Jon Snow. Il était souvent accompagné de son loup-garou Vent Gris, qui l'accompagne toujours au champs de bataille.
 Mort
 Baratheon
 Robert
 Baratheon
-
+Robert Baratheon, surnommé l'Usurpateur, était le suzerain de la Maison Baratheon et le Roi des Sept Royaumes depuis l'an 283 jusqu'à sa mort en l'an 298. Il a été couronné après la victoire des rebelles dans la guerre de l'Usurpateur.
 Mort
+Tully
+Roslin
+Tully
+Roslin Tully, née Frey, est l'une des filles de Walder Frey, et contrairement à la majorité des filles de Lord Walder, elle est d'une grande beauté. Elle était la promise de Robb Stark avant que ce dernier n'épouse Talissa Maegyr. Plus tard, Roslin épousera le frère de Catelyn Stark, lord Edmure Tully lors des Noces Pourpres.
+Vivant
+Clegane
+Sandor
+Clegane
+Sandor Clegane, dit « le Limier », est, au début de la série, le garde du corps du prince Joffrey Baratheon. Il est considéré comme l'un des meilleurs combattants de Westeros et a la moitié du visage atrocement brûlée (brûlure infligée par son frère aîné, Gregor, alors qu'ils étaient enfants)
+Vivant
 Stark
 Sansa
 Stark
-
+Sansa est la fille aînée d'Eddard et Catelyn Stark ainsi que la jeune cadette de Robb et la sœur aînée de Arya, Bran et Rickon. Elle est également par son père la demi-sœur de Jon Snow.
 Vivant
 Baratheon
 Stannis
 Baratheon
-
+Stannis Baratheon, frère cadet de Robert Baratheon, est le seigneur de Peyredragon. C'est un homme extrêmement rigide et austère qui fait valoir ses droits au Trône de Fer à la mort de son frère. Rancunier, il ne pardonne aucun affront, même ancien, ce qui a lentement terni ses relations avec ses frères ou le conduit à s'obséder pour la possession d’Accalmie alors qu'un royaume entier s'ouvre à lui.
 Mort
 Lannister
 Tommen
 Lannister
-
+Tommen est le fils légitime de Robert Baratheon et Cersei Lannister, mais est en réalité le fils biologique du frère jumeau de sa mère, Jaime Lannister. Il est également le frère cadet du roi Joffrey et de la princesse Myrcella Baratheon. Après la mort de son frère, il devient roi sous le nom de Tommen Ier Baratheon puis épouse Margaery Tyrell, alors veuve de Joffrey.
+Vivant
+Gris
+Ver
+noHouse
+Ver Gris est acheté avec les autres Immaculés d'Astapor par Daenerys Targaryen, et participe à ce titre au sac de la ville. Lorsque Daenerys, après les avoir affranchis, abolit la règle du changement quotidien de nom, il décide de garder ce nom, car il marque le jour de son affranchissement, alors qu'il portait son nom d'homme libre le jour de son asservissement. Daenerys ayant ensuite demandé aux Immaculés de choisir des officiers dans leurs rangs, Ver Gris est désigné à une écrasante majorité pour devenir le plus haut gradé d’entre eux, et porte désormais le casque à trois pointes. L’art du commandement lui est enseigné par ser Jorah Mormont.
+Ver Gris commande donc les Immaculés lors de la bataille de Yunkaï.
 Vivant
 Targaryen
 Viserys
 Targaryen
-
+Viserys Targaryen est le fils de l'ancien roi, Aerys II Targaryen, le Roi Fou, dépossédé de son trône par l'Usurpateur Robert Baratheon. Viserys est un jeune homme cruel et vain qui veut à tout prix reconquérir le trône de ses ancêtres. Toute sa vie, Viserys a vécu en exil dans les Cités libres, cultivant sa paranoïa des hommes de mains de l'usurpateur à ses trousses. 
 Mort
+
