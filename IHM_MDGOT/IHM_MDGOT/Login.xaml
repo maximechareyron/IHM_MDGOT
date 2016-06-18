@@ -46,6 +46,7 @@
             </Grid>
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Style="{DynamicResource BoutonConnexion}" Content="Créer un compte" />
             <Button Style="{DynamicResource BoutonLogin}" Content="Se connecter" />
             <Button Style="{DynamicResource BoutonCancel}" Content="Annuler" />
         </StackPanel>

@@ -31,7 +31,6 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
 
             <Button Style="{DynamicResource BoutonConnexion}" Content="Connexion" />
-            <Button Style="{DynamicResource BoutonConnexion}" Content="Créer un compte" />
 
         </StackPanel>
 

@@ -14,6 +14,7 @@ namespace IHM_MDGOT.Modeles
             get;
             private set;
         }
+
         private string _email;
         public string Email
         {
@@ -34,7 +35,7 @@ namespace IHM_MDGOT.Modeles
         }
         public override string ToString()
         {
-            return string.Format("{0}", Username);
+            return Username;
         }
 
     }

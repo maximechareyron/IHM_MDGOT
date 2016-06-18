@@ -134,7 +134,6 @@ namespace IHM_MDGOT.ViewModels {
                 ListePersonnages.Add(_fenetreEditionPerso.ViewModel.Personnage);
                 ListePersonnages = TrierListe(ListePersonnages); // Supprimable ?
                 ListePersonnageAffich = ListePersonnages;
-                //NotifyPropertyChanged("ListePersonnageAffich"); //Ajouté dans le setter de ListePersonnageAffich
             }
         }
 
@@ -142,14 +141,12 @@ namespace IHM_MDGOT.ViewModels {
         private void OnDeleteCommand(object o) {
             ListePersonnages.Remove(Personnage);
             ListePersonnageAffich = ListePersonnages;
-            //NotifyPropertyChanged("ListePersonnageAffich");
         }
 
         private void OnSearchCommand(object o) {
             ObservableCollection<PersonnageModel> oc = Rechercher();
             if (oc == null) return;
             ListePersonnageAffich = oc;
-            //NotifyPropertyChanged("ListePersonnageAffich");
         }
 
         private void OnKillCommand(object o){
