@@ -65,6 +65,8 @@
       <DependentUpon>CreationCompte.xaml</DependentUpon>
     </Compile>
     <Compile Include="Events\ButtonPressedEvent.cs" />
+    <Compile Include="Events\PersonnageModelEventArgs.cs" />
+    <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Fichier.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -72,7 +74,7 @@
     <Compile Include="Modeles\UserModel.cs" />
     <Compile Include="ViewModels\ListPersonnagesViewModel.cs" />
     <Compile Include="ViewModels\PersonnageViewModel.cs" />
-    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="ViewModels\LogInViewModel.cs" />
     <Page Include="CreationCompte.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

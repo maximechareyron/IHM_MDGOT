@@ -42,8 +42,8 @@
                     TextWrapping="Wrap"
                     AcceptsReturn="True"
                     VerticalScrollBarVisibility="Visible"
-                    >                    
-                </TextBox>
+                    Text="{Binding Personnage.Description}"
+                    />
             </StackPanel>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="0 0 0 5">

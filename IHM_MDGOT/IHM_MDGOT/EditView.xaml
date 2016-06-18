@@ -30,7 +30,6 @@
                 <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 40 0 0" Text="Maison : " />
                 <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 35 0 0" Text="Etat : " />
                 <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 40 0 0" Text=" Description :" />
-                <TextBlock Style="{DynamicResource TextBlockHoriz}" Margin="0 40 0 0" Text=" Portrait :" />
 
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Vertical">
@@ -44,9 +43,10 @@
                     TextWrapping="Wrap"
                     AcceptsReturn="True"
                     VerticalScrollBarVisibility="Visible"
-                    >
-                </TextBox>
-                <Button Content="Parcourir..."  Margin="20,20,0,0" Padding="5 5 5 5" Grid.Row="3" VerticalAlignment="Center" Width="130" HorizontalAlignment="Left" Command="{Binding OnAddCommand}"/>
+                    Text="{Binding Personnage.Description}"
+                    MaxHeight="90"
+                    />
+
             </StackPanel>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="0 0 0 5">

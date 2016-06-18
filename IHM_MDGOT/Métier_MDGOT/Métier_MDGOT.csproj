@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="Entities\Etat.cs" />
     <Compile Include="Entities\House.cs" />
     <Compile Include="Entities\Personnage.cs" />
@@ -60,6 +61,10 @@
     <Resource Include="ImagesHouses\targaryen.jpg" />
     <Resource Include="ImagesHouses\tully.jpg" />
     <Resource Include="ImagesHouses\tyrell.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Saves\got.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

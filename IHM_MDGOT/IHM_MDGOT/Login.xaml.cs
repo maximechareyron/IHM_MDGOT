@@ -17,13 +17,13 @@ namespace IHM_MDGOT {
     /// Logique d'interaction pour Login.xaml
     /// </summary>
     public partial class Login : Window {
-        private UserViewModel _viewModel;
+        private LogInViewModel _viewModel;
 
         public Login()
         {
             InitializeComponent();
 
-            _viewModel = new UserViewModel();
+            _viewModel = new LogInViewModel();
             DataContext = _viewModel;
         }
     }

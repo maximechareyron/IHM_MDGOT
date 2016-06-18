@@ -6,6 +6,7 @@ using Métier_MDGOT;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace IHM_MDGOT.ViewModels {
         public DelegateCommand SearchCommand { get; set; }
         public DelegateCommand KillCommand { get; set; }
         public DelegateCommand ComeBackCommand { get; set; }
+        public DelegateCommand SaveCommand { get; set; }
 
         public String Recherche { get; set; }
 
@@ -38,7 +40,6 @@ namespace IHM_MDGOT.ViewModels {
                 NotifyPropertyChanged("ListePersonnageAffich");
                 EditCommand.RaiseCanExecuteChanged();
                 DeleteCommand.RaiseCanExecuteChanged();
-                SearchCommand.RaiseCanExecuteChanged();
                 KillCommand.RaiseCanExecuteChanged();
                 ComeBackCommand.RaiseCanExecuteChanged();
             }
@@ -77,7 +78,24 @@ namespace IHM_MDGOT.ViewModels {
             SearchCommand = new DelegateCommand(OnSearchCommand, CanExecuteSearch);
             KillCommand = new DelegateCommand(OnKillCommand, CanExecuteIfPersoSelected);
             ComeBackCommand = new DelegateCommand(OnComeBackCommand, CanExecuteIfPersoSelected);
+            SaveCommand = new DelegateCommand(OnSaveCommand, CanSaveCommand);
 
+        }
+
+        public void sauvegarder(string nomFic) {
+            System.IO.File.Delete(string.Format("../../../Métier_MDGOT/Saves/{0}", nomFic));
+            StreamWriter writer = new StreamWriter(string.Format("../../../Métier_MDGOT/Saves/{0}", nomFic), true);
+
+            int nbElem = ListePersonnages.Count();
+            writer.WriteLine(nbElem);
+            foreach (PersonnageModel p in ListePersonnages) {
+                writer.WriteLine(p.Nom);
+                writer.WriteLine(p.Prenom);
+                writer.WriteLine(p.Maison);
+                writer.WriteLine(p.Description);
+                writer.WriteLine(p.Etat);
+            }
+            writer.Close();
         }
 
         public ObservableCollection<PersonnageModel> Rechercher() {
@@ -137,7 +155,7 @@ namespace IHM_MDGOT.ViewModels {
             }
         }
 
-
+        
         private void OnDeleteCommand(object o) {
             ListePersonnages.Remove(Personnage);
             ListePersonnageAffich = ListePersonnages;
@@ -162,18 +180,28 @@ namespace IHM_MDGOT.ViewModels {
             NotifyPropertyChanged("Personnage");
         }
 
+        private void OnSaveCommand(object o) {
+            sauvegarder("got.txt");
+            System.Windows.Forms.MessageBox.Show("Enregistrement effectué !");
+        }
+
         private bool CanExecuteAdd(object o) {
             return true;
         }
 
-        private bool CanExecuteSearch(Object o) {
+        private bool CanExecuteSearch(object o) {
             //return (Recherche != null && Recherche != "");
             return true;
         }
 
-        private bool CanExecuteIfPersoSelected(Object o) {
+        private bool CanExecuteIfPersoSelected(object o) {
             return Personnage != null;
         }
+
+        private bool CanSaveCommand(object o) {
+            return true; //valide si la personne est loguée
+        }
+        
 
     }
 }

@@ -17,7 +17,7 @@ namespace Métier_MDGOT {
 
         public Etat Etat { get; set; }
 
-        public Personnage(string nom, string prenom, string maison, string description, string etat) {
+        /*public Personnage(string nom, string prenom, string maison, string description, string etat) {
             Nom = nom;
             Prenom = prenom;
             Maison = (House) Enum.Parse(typeof(House), maison, true);
@@ -28,6 +28,6 @@ namespace Métier_MDGOT {
         public Personnage(string nom, string prenom, string maison) : this(nom, prenom, maison, null, "Inconnu") { }
 
         public Personnage(string nom, string prenom) : this(nom, prenom, "NoHouse", null, "Inconnu") { }
-
+        */
     }
 }

@@ -49,11 +49,9 @@
                     <ImageBrush ImageSource="Images/search.png"/>
                 </Button.Background>
             </Button>
-
             <RadioButton Grid.Column="1"  Content="Tous" />
             <RadioButton Grid.Column="2"  Content="Vivants" />
             <RadioButton Grid.Column="3" Content="Morts" />
-            <RadioButton Grid.Column="4" Content="Bientôt morts" />
         </Grid>
 
         <Grid Grid.Row="2" Grid.RowSpan="2">
@@ -82,12 +80,14 @@
                     <TextBlock FontSize="20" Text="{Binding Personnage.Maison, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
                 <StackPanel Style="{DynamicResource StackPanel}" Grid.Row="2">
-                    <TextBlock FontSize="20" Text="Etat de vitalité : " Margin="0 0 5 0"/>
+                    <TextBlock FontSize="20" Text="Etat : " Margin="0 0 5 0"/>
                     <TextBlock FontSize="20" Text="{Binding Personnage.Etat, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
                 <StackPanel Style="{DynamicResource StackPanel}" Grid.Row="3">
                     <TextBlock FontSize="20" Text="Description : " Margin="0 0 5 0"/>
-                    <TextBlock FontSize="20" Text="{Binding Personnage.Description, UpdateSourceTrigger=PropertyChanged}"/>
+                    <ScrollViewer>
+                    <TextBlock Width ="250" FontSize="12" Text="{Binding Personnage.Description, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"/>
+                    </ScrollViewer>
                 </StackPanel>
                 <Image Grid.Column="1" Grid.RowSpan="4" Height="300" HorizontalAlignment="Right" VerticalAlignment="Top" Source="{Binding Personnage.ImageMaison}"/>
             </Grid>
@@ -99,6 +99,7 @@
             <Button Style="{DynamicResource BoutonMain}" Content="Supprimer le Personnage" Width="150" Command="{Binding DeleteCommand}"/>
             <Button Style="{DynamicResource BoutonMain}" Content="Tuer" MinWidth="100" Command="{Binding KillCommand}"/>
             <Button Style="{DynamicResource BoutonMain}" Content="Réanimer" MinWidth="100" Command="{Binding ComeBackCommand}"/>
+            <Button Style="{DynamicResource BoutonMain}" Content="Sauvegarder" MinWidth="100" Command="{Binding SaveCommand}"/>
         </StackPanel>
     </Grid>
 </Window>

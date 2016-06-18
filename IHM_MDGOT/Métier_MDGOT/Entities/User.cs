@@ -4,18 +4,20 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 
-namespace IHM_MDGOT.Modeles {
-    class User {
-        private string _username;
-        public string Username {
-            get;
-            private set;
+namespace MétierMDGOT.Entities {
+    public class User {
+        public string Username{get;set;}
+
+        public string Email{get;set;}
+        
+        public string Password{get;set;}
+
+        public User(string username, string email, string password) {
+            Username = username;
+            Email = email;
+            Password = password;
         }
-        private string _password;
-        public string Password {
-            get;
-            private set;
-        }
+
+        public User(string username, string password) : this(username, null, password) { }
     }
 }
-

@@ -16,7 +16,8 @@ namespace IHM_MDGOT.Factories {
 				Nom = perso.Nom,
 				Prenom = perso.Prenom,
 				Maison = perso.Maison,
-				Etat = perso.Etat
+				Etat = perso.Etat,
+                Description = perso.Description
 			};
 		}
 
